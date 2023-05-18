@@ -34,6 +34,11 @@
       color: #262a3f;
       cursor: pointer;
       position: relative;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
 
     li:hover::after {

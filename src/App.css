@@ -1,10 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #eff1f3;
+  background: linear-gradient(to right, #eff1f3, rgb(255, 255, 255));
 }
 .App {
   background-repeat: no-repeat;
+  background-size: contain;
   width: 100%;
 }
 
@@ -17,5 +18,4 @@ body {
   margin-left: 20px;
   cursor: pointer;
   height: 25px;
-  /* width: 20px; */
 }

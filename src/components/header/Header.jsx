@@ -12,11 +12,11 @@ const Header = () => {
     <div className={headerClassName}>
       <img src={LogoImage} alt="" className="logo-image" />
       <ul className={navbarClassName}>
-        <li>Home</li>
+        <li><a target="_blank" href="https://github.com/MatthewDemo?tab=repositories">Home</a></li>
         <li>About</li>
         <li>Products</li>
         <li>Use cases</li>
-        <li>Pricing</li>
+        <li onClick={() => alert('Я хочу лише від 400$ на місяць')}>Pricing</li>
         <li>Resources</li>
       </ul>
     </div>

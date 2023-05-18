@@ -3,7 +3,6 @@ import Header from "./components/header/Header";
 import FirstTextBlock from "./components/first-text-block/FirstTextBlock";
 import FirstBackgroundImage from "./images/first-screen-image.svg";
 import FirstBackgroundImageBlack from "./images/first-screen-image-black.svg";
-import { useState } from "react";
 import Statistic from "./components/statistic/Statistic";
 import Benefits from "./components/benefits/Benefits";
 import Quote from "./components/quote/Quote";
@@ -20,8 +19,6 @@ import { setIsBlack } from "./redux/slices/themeSlice";
 function App() {
   const isBlack = useSelector((state) => state.theme.isBlack);
   const dispatch = useDispatch();
-
-  // const [isBlack, setIsBlack] = useState(false);
   const switcherIcon = isBlack ? sun : moon;
   const appClassName = isBlack ? "App App-black" : "App";
   const backgroundImage = isBlack
