@@ -2,10 +2,11 @@ import React from "react";
 import "./Quote.scss";
 import CommasOrange from "../../images/commas-orange.svg";
 import CommasBlue from "../../images/commas-blue.svg";
-
 import QuoteBackground from "../../images/quote-background.svg";
+import { useSelector } from "react-redux";
 
-const Quote = ({ isBlack }) => {
+const Quote = () => {
+  const isBlack = useSelector((state) => state.theme.isBlack);
   const commasImage = isBlack ? CommasBlue : CommasOrange;
 
   return (

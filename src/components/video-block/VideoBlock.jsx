@@ -4,14 +4,16 @@ import screenSaver from "../../images/screensaver-video.svg";
 import VideoFile from "../../images/video.mp4";
 import IconPlay from "../../images/icon-play.svg";
 import "./VideoBlock.scss";
+import { useSelector } from "react-redux";
 
-const VideoBlock = ({ isBlack }) => {
+const VideoBlock = () => {
+  const isBlack = useSelector((state) => state.theme.isBlack);
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
 
-   const videoBlockClassName = isBlack
-  ? "video-block video-block-black"
-  : "video-block";
+  const videoBlockClassName = isBlack
+    ? "video-block video-block-black"
+    : "video-block";
 
   const handlePlayPause = () => {
     const video = videoRef.current;

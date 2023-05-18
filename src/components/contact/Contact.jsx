@@ -1,8 +1,10 @@
 import React from "react";
 import "./Contact.scss";
+import { useSelector } from "react-redux";
 
-const Contact = ({ isBlack }) => {
-    const contactClassName = isBlack ? "contact contact-black" : "contact";
+const Contact = () => {
+  const isBlack = useSelector((state) => state.theme.isBlack);
+  const contactClassName = isBlack ? "contact contact-black" : "contact";
   return (
     <div className={contactClassName}>
       <div className="left-side">

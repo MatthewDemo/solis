@@ -1,11 +1,13 @@
 import React from "react";
 import StatisticImage from "../../images/statistic-image.svg";
 import "./Statistic.scss";
+import { useSelector } from "react-redux";
 
-const Statistic = ({ isBlack }) => {
+const Statistic = () => {
+  const isBlack = useSelector((state) => state.theme.isBlack);
   const statisticClassName = isBlack
-  ? "statistic statistic-black"
-  : "statistic";
+    ? "statistic statistic-black"
+    : "statistic";
   return (
     <div className={statisticClassName}>
       <img src={StatisticImage} alt="" className="statistic-image" />

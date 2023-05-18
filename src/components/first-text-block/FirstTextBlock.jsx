@@ -1,7 +1,9 @@
 import React from "react";
 import "./FirstTextBlock.scss";
+import { useSelector } from "react-redux";
 
-const FirstTextBlock = ({ isBlack }) => {
+const FirstTextBlock = () => {
+  const isBlack = useSelector((state) => state.theme.isBlack);
   const firstTextBlockClassName = isBlack
     ? "first-text-block first-text-block-black"
     : "first-text-block";

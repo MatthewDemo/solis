@@ -1,10 +1,10 @@
 import React from "react";
 import "./Benefits.scss";
+import { useSelector } from "react-redux";
 
-const Benefits = ({isBlack}) => {
-    const benefitsClassName = isBlack
-  ? "benefits benefits-black"
-  : "benefits";
+const Benefits = () => {
+  const isBlack = useSelector((state) => state.theme.isBlack);
+  const benefitsClassName = isBlack ? "benefits benefits-black" : "benefits";
   return (
     <div className={benefitsClassName}>
       <ul>

@@ -1,10 +1,12 @@
 import React from "react";
 import LogoImage from "../../images/logo.svg";
 import "./Header.scss";
+import { useSelector } from "react-redux";
 
-const Header = ({isBlack}) => {
-    const navbarClassName = isBlack ? "navbar navbar-black" : "navbar";
-    const headerClassName = isBlack ? "header header-black" : "header";
+const Header = () => {
+  const isBlack = useSelector((state) => state.theme.isBlack);
+  const navbarClassName = isBlack ? "navbar navbar-black" : "navbar";
+  const headerClassName = isBlack ? "header header-black" : "header";
 
   return (
     <div className={headerClassName}>

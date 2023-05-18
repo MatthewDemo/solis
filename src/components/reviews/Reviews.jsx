@@ -3,8 +3,10 @@ import reviewImage1 from "../../images/review1.svg";
 import reviewImage2 from "../../images/review2.svg";
 import reviewImage3 from "../../images/review3.svg";
 import "./Reviews.scss";
+import { useSelector } from "react-redux";
 
-const Reviews = ({ isBlack }) => {
+const Reviews = () => {
+  const isBlack = useSelector((state) => state.theme.isBlack);
   const reviewsClassName = isBlack ? "reviews reviews-black" : "reviews";
   return (
     <div className={reviewsClassName}>

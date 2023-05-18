@@ -1,8 +1,10 @@
 import React from "react";
 import "./Promises.scss";
 import PromisesBackground from "../../images/promises-background-image.svg";
+import { useSelector } from "react-redux";
 
-const Promises = ({ isBlack }) => {
+const Promises = () => {
+  const isBlack = useSelector((state) => state.theme.isBlack);
   const promisesClassName = isBlack ? "promises promises-black" : "promises";
   return (
     <div className={promisesClassName}>

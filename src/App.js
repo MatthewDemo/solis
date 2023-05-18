@@ -14,9 +14,14 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import moon from "./images/moon.svg";
 import sun from "./images/sun.svg";
+import { useSelector, useDispatch } from "react-redux";
+import { setIsBlack } from "./redux/slices/themeSlice";
 
 function App() {
-  const [isBlack, setIsBlack] = useState(false);
+  const isBlack = useSelector((state) => state.theme.isBlack);
+  const dispatch = useDispatch();
+
+  // const [isBlack, setIsBlack] = useState(false);
   const switcherIcon = isBlack ? sun : moon;
   const appClassName = isBlack ? "App App-black" : "App";
   const backgroundImage = isBlack
@@ -31,19 +36,19 @@ function App() {
       <img
         src={switcherIcon}
         alt=""
-        onClick={() => setIsBlack(!isBlack)}
+        onClick={() => dispatch(setIsBlack())}
         className="theme-switcher"
       />
-      <Header isBlack={isBlack} />
-      <FirstTextBlock isBlack={isBlack} />
-      <Statistic isBlack={isBlack} />
-      <Benefits isBlack={isBlack} />
-      <Quote isBlack={isBlack} />
-      <VideoBlock isBlack={isBlack} />
-      <Promises isBlack={isBlack} />
-      <Reviews isBlack={isBlack} />
-      <Contact isBlack={isBlack} />
-      <Footer isBlack={isBlack} />
+      <Header />
+      <FirstTextBlock />
+      <Statistic />
+      <Benefits />
+      <Quote />
+      <VideoBlock />
+      <Promises />
+      <Reviews />
+      <Contact />
+      <Footer />
     </div>
   );
 }
