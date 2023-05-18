@@ -1,0 +1,85 @@
+.first-text-block {
+  // position: absolute;
+  width: 523px;
+  height: auto;
+  margin-top: 60px;
+  margin-left: 135px;
+
+  h1 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    color: #262a3f;
+    span {
+      font-style: italic;
+      color: rgba(133, 187, 177, 1);
+    }
+  }
+  p {
+    width: 439px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #262a3f;
+    opacity: 0.8;
+  }
+  .join-now-button {
+    top: 50px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #f1897b;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      color: #e64f3a;
+    }
+  }
+  .join-now-button::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #f1897b;
+    opacity: 0.3;
+    width: 100%;
+    height: 13px;
+    margin-top: -13px;
+    margin-left: 10px;
+  }
+  .join-now-button:hover::after {
+    background: #e54f3a;
+  }
+}
+
+.first-text-block-black {
+  h1 {
+    color: #ffffff;
+    span {
+      color: rgba(104, 159, 242, 1);
+    }
+  }
+  p {
+    color: #ffffff;
+  }
+  .join-now-button {
+    color: #53f3cd;
+    &:hover {
+      color: #02e0ab;
+    }
+  }
+  .join-now-button::after {
+    background: #53f3cd;
+  }
+  .join-now-button:hover::after {
+    background-color: #02e0ab;
+  }
+}

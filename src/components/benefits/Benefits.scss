@@ -1,0 +1,51 @@
+.benefits {
+  margin-top: 100px;
+  width: 1170px;
+  margin-left: 115px;
+  display: flex;
+  justify-content: space-between;
+  ul {
+    list-style: none;
+    li {
+      height: 250px;
+      width: 500px;
+      border-top: 1px solid #e4e4e4;
+      h1 {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        color: #262a3f;
+        span {
+          font-style: italic;
+          color: rgba(133, 187, 177, 1);
+        }
+      }
+      p {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        color: #262a3f;
+      }
+    }
+  }
+}
+
+.benefits-black {
+  ul {
+    li {
+      h1 {
+        color: #ffffff;
+        span {
+          color: rgba(104, 159, 242, 1);
+        }
+      }
+      p {
+        color: #ffffff;
+      }
+    }
+  }
+}

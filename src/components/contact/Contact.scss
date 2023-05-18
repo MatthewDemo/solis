@@ -1,0 +1,137 @@
+.contact {
+  height: 320px;
+  width: 1169px;
+  margin-left: 135px;
+  margin-top: 100px;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+
+  display: flex;
+  justify-content: space-between;
+
+  .left-side {
+    margin-top: 81px;
+    h1 {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 39px;
+      color: #262a3f;
+      span {
+        font-style: italic;
+        color: rgba(133, 187, 177, 1);
+      }
+    }
+    p {
+      width: 470px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      color: #262a3f;
+      opacity: 0.8;
+    }
+  }
+
+  .right-side {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+
+    input {
+      outline: none;
+      font-family: "Playfair Display";
+      font-style: italic;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 0.08em;
+      background-color: transparent;
+      color: #262a3f;
+      border: none;
+      border-bottom: 1px solid #262a3f34;
+      width: 470px;
+      padding-bottom: 10px;
+    }
+
+    .send-request-button {
+      position: absolute;
+      width: 230px;
+      border: none;
+      top: 50px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #f1897b;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        color: #e64f3a;
+      }
+    }
+    .send-request-button::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background: #f1897b;
+      opacity: 0.3;
+      width: 163px;
+      height: 13px;
+      margin-top: -11px;
+      margin-left: 10px;
+    }
+    .send-request-button:hover::after {
+      background: #e54f3a;
+    }
+  }
+}
+
+.contact-black {
+  border-top: 1px solid #515773;
+  border-bottom: 1px solid #515773;
+  .left-side {
+    h1 {
+      color: #ffffff;
+      span {
+        font-style: italic;
+        color: rgba(104, 159, 242, 1);
+      }
+    }
+    p {
+      color: #ffffff;
+    }
+  }
+
+  .right-side {
+    input {
+      background-color: transparent;
+      color: #ffffff;
+      border-bottom: 1px solid #ffffff34;
+    }
+
+    .send-request-button {
+        color: #53f3cd;
+
+        &:hover {
+          color: #02e0ab;
+        }
+      }
+      .send-request-button::after {
+        content: "";
+        background-color: #53f3cd;
+      }
+      .send-request-button:hover::after {
+        background-color: #02e0ab;
+      }
+    }
+  }
+

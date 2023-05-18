@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  width: 1169px;
+  margin-left: 135px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  span {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    color: #262a3f;
+    opacity: 0.6;
+  }
+
+  p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: #262a3f;
+    cursor: pointer;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.footer-black {
+  span {
+    color: #ffffff;
+    opacity: 0.6;
+  }
+  p {
+    color: #ffffff;
+  }
+}

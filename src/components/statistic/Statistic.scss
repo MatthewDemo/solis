@@ -1,0 +1,138 @@
+.statistic {
+  margin-top: 160px;
+  margin-left: 135px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  .statistic-image {
+    height: 670px;
+    width: 570px;
+  }
+  .statistic-block {
+    position: absolute;
+    width: 770px;
+    height: 580px;
+    left: 400px;
+    background: #ffffff;
+    opacity: 0.9;
+    display: flex;
+    ul {
+      list-style: none;
+      .with-border::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 1px;
+        background-color: #85BBB1;
+        margin: 0 auto;
+        margin-top: 8px;
+      }
+
+      li {
+        h1 {
+          font-family: "Playfair Display";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 68px;
+          line-height: 72px;
+          text-align: center;
+          color: #262a3f;
+
+          span {
+            font-size: 40px;
+            color: #e4e4e4;
+          }
+        }
+        p {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 26px;
+          text-align: center;
+          color: #262a3f;
+          opacity: 0.8;
+          margin-top: -40px;
+        }
+      }
+    }
+
+    .statistic-description {
+      width: 400px;
+      height: 315px;
+      margin-left: 50px;
+      margin-top: 40px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      color: #262a3f;
+
+      .contact-sales-button {
+        top: 50px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #f1897b;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+          color: #e64f3a;
+        }
+      }
+      .contact-sales-button::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: #f1897b;
+        opacity: 0.3;
+        width: 100%;
+        height: 13px;
+        margin-top: -13px;
+        margin-left: 10px;
+      }
+      .contact-sales-button:hover::after {
+        background: #e54f3a;
+      }
+    }
+  }
+}
+
+.statistic-black {
+  .statistic-block {
+    background: #161926;
+    ul {
+      li {
+        h1 {
+          color: #ffffff;
+        }
+        p {
+          color: #ffffff;
+        }
+      }
+    }
+    .statistic-description {
+      color: #ffffff;
+      .contact-sales-button {
+        color: #53f3cd;
+
+        &:hover {
+          color: #02e0ab;
+        }
+      }
+      .contact-sales-button::after {
+        content: "";
+        background-color: #53f3cd;
+      }
+      .contact-sales-button:hover::after {
+        background-color: #02e0ab;
+      }
+    }
+  }
+}
